@@ -1,0 +1,19 @@
+
+
+
+
+<mat-grid-list class="grid" cols="5" rowHeight="320px">
+    <mat-grid-tile class="tile" *ngFor="let link of links">
+        <mat-card class="card" >
+            <mat-card-header>
+                <mat-card-title>{{link.name}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src={{link.img}}>
+            <mat-card-content><p>{{link.content}}</p></mat-card-content>
+            <mat-card-actions>
+                <button mat-button color="primary" (click)="goTo(link.link)">Open</button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+    
+</mat-grid-list>  

@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'sv02';
+  title = 'SV02';
+  opened: boolean = false;
+  events: String[] = [];
 }
